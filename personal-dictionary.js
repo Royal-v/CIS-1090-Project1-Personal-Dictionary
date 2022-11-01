@@ -1,16 +1,15 @@
 //Fill in this empty file
-let words= [];
-function search(word){
-    let position = 0;
-    while(position <= personaldictionary.length - 1){
-        if(database[position] == word){
-            return true;
-        }
-        else(position++)
+let words = [];
+function search(word) {
+    if (words.includes(word)) {
+        return true;
     }
-    return false;
+    else {
+        return false;
+    }
 }
-function addWord(word){
+
+function addWord(word) {
     words.push(word);
 }
-export{search, addWord};
+export { search, addWord, words };
